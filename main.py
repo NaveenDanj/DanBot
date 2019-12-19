@@ -119,7 +119,7 @@ class Bot:
         if index == None:
             return "Sorry...I don't Understand that properly!"
         else:
-            elem = random.randint(0 , len(json['questions'][i]['answer']["answers"]))
+            elem = random.randint(0 , len(json['questions'][index]['answer']["answers"]))
             return json['questions'][index]['answer']["answers"][elem]
 
 
